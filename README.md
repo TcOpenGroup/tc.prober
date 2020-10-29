@@ -19,7 +19,7 @@ Takes your plc program and trans-piles it into .net accessible twin represented 
 
 Inxton developer license is free and grants full functionality. It limits the run of the program to a period of up to 2 hours. After this period, the restart is required. You can get the license at [inxton.com](https://www.inxton.com). For the unit-testing project, the developer license is sufficient.
 
-**IMPORTANT** When you clone or download this repository please open ```PackageManageConsole``` for in order to initialize IVF-compiler.
+**IMPORTANT** When you clone or download this repository please open ```PackageManageConsole``` in order to initialize IVF-compiler.
 
 **Update packages**
 
@@ -30,10 +30,7 @@ The Vortex Builder does not exists
 =============== Build cancelled ===============
 ~~~
 
-To fix this issue go to Package manager console and type `Update-Package -Reinstall`
-
 ![packager_mngr_view](https://raw.githubusercontent.com/Inxton/documentation/master/common/assets/package_manager_console_view.png)
-
 
 **Visual Studio Extension**
 
