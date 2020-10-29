@@ -6,18 +6,43 @@
 
 ## This project is using:
 
-- TwinCAT3 4024.10
-- VS2019
-- nUnit/xUnit
-- Inxton.Package.Vortex.Essentials
+- [TwinCAT3 4024.10](https://www.beckhoff.com/english.asp?download/tc3-downloads.htm)
+- [VS2019](https://visualstudio.microsoft.com/vs/community/)
+- [nUnit](https://www.nuget.org/packages/NUnit/)/[xUnit](https://www.nuget.org/packages/xunit/)
+- [Inxton.Package.Vortex.Essentials](https://github.com/Inxton/documentation/blob/master/Inxton.Package.Vortex.Essentials/README.md)
 
 ## Inxton.Vortex.Framework IVF
 
 Takes your plc program and trans-piles it into .net accessible twin represented as clr/.net objects that are accessible from any .net application. It is as if you referenced plc project in a .net project. You can read [more here](https://github.com/Inxton/documentation/blob/master/apis/Inxton.vortex.compiler.console/Conceptual/TwinObjects.md).
 
-### TL;DR Inxton licensing*
+### TL;DR Inxton licensing
 
 Inxton developer license is free and grants full functionality. It limits the run of the program to a period of up to 2 hours. After this period, the restart is required. You can get the license at [inxton.com](https://www.inxton.com). For the unit-testing project, the developer license is sufficient.
+
+**IMPORTANT** When you clone or download this repository please open ```PackageManageConsole``` for in order to initialize IVF-compiler.
+
+**Update packages**
+
+You may encounter this error message when trying to run IVF compiler
+
+~~~ Powershell
+The Vortex Builder does not exists
+=============== Build cancelled ===============
+~~~
+
+To fix this issue go to Package manager console and type `Update-Package -Reinstall`
+
+![packager_mngr_view](https://raw.githubusercontent.com/Inxton/documentation/master/common/assets/package_manager_console_view.png)
+
+
+**Visual Studio Extension**
+
+For more convenient use of IVF-compiler install [VSExtension](
+https://marketplace.visualstudio.com/items?itemName=Inxton.InxtonVortexBuilderExtensionPre)
+
+![inxton_transpile.gif](https://github.com/Inxton/Examples-Inxton.Package.Vortex.Core/blob/master/assets/inxton_transpile.gif?raw=true)
+
+More about IVF-compiler [here](https://github.com/Inxton/documentation/blob/master/apis/Inxton.vortex.compiler.console/README.md)
 
 ## Brief concept description
 
